@@ -4,6 +4,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 
 import { AuthRouthingModule } from './auth-routhing.module';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -11,7 +12,8 @@ import { AuthRouthingModule } from './auth-routhing.module';
     declarations: [LoginComponent, RegisterComponent],
     imports: [
         CommonModule,
-        AuthRouthingModule
+        AuthRouthingModule,
+        MaterialModule
     ]
 })
 export class AuthModule { }
